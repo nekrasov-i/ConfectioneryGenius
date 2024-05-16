@@ -1,0 +1,472 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aa0f90dc2f34d5d8e57abb0d145dd68, type: 3}
+  m_Name: LevelData
+  m_EditorClassIdentifier: 
+  PictureConfig:
+  - PictureID: 0
+    RusName: "\u041C\u0430\u043D\u0433\u043E\u0432\u043E-\u0444\u0438\u0441\u0442\u0441\u0430\u0448\u043A\u043E\u0432\u044B\u0439
+      \u043C\u0430\u043A\u0430\u0440\u043E\u043D"
+    EngName: Mango pistachio macaron
+    TurName: "Mango f\u0131st\u0131kl\u0131 makaron"
+    PicturePrefab: {fileID: 1874487016166985361, guid: b9772085008691b45afa6393a9130cd7, type: 3}
+    SpawnPosition: {x: 0, y: -2, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: d9d32308ca5ae0f4b834fdd6b7a132e2, type: 2}
+    - {fileID: 2100000, guid: 668712c157caad74fb9ced01cfbe7097, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 878260ec339b3f84f822c285ece0aa36, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 58f77e6d1e90f81449d308b709c74fde, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 1
+    RusName: "\u0410\u043F\u0435\u043B\u044C\u0441\u0438\u043D\u043E\u0432\u0430\u044F
+      \u043A\u043E\u0440\u0437\u0438\u043D\u043A\u0430"
+    EngName: Orange basket
+    TurName: Turuncu sepet
+    PicturePrefab: {fileID: 923433735878023309, guid: b897e8e13fea1f74aa38ff62190c7959, type: 3}
+    SpawnPosition: {x: 0, y: -2, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 517f7a2dad379e740af3b1a28b15e25f, type: 2}
+    - {fileID: 2100000, guid: d0c1733ebbf7a11468aa7bd49bf9e911, type: 2}
+    - {fileID: 2100000, guid: 0f29019987386f749b1a3f5e136ad240, type: 2}
+    - {fileID: 2100000, guid: 087bbc5fc93ded84da3202d4983efb33, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 2da57cf5ce8d2714db22096a2852d80f, type: 3}
+    ColorIcon: {fileID: 21300000, guid: a7d436c57ed6eb0489a55ed26598bf11, type: 3}
+    BrushBonus: 50
+    FindNumberBonus: 0
+  - PictureID: 2
+    RusName: "\u0428\u043E\u043A\u043E\u043B\u0430\u0434\u043D\u043E\u0435 \u043C\u043E\u0440\u043E\u0436\u0435\u043D\u043E\u0435"
+    EngName: Chocolate ice cream
+    TurName: "\xC7ikolatal\u0131 dondurma"
+    PicturePrefab: {fileID: 3236450508450901475, guid: f46c7c99065645e44b7548aed8d1f065, type: 3}
+    SpawnPosition: {x: 0, y: -6, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 425db28e1dc0fa94b8f736d532fbfe2f, type: 2}
+    - {fileID: 2100000, guid: 121aec9888975cd4cb22c586b4f384ad, type: 2}
+    - {fileID: 2100000, guid: 705b427afea8b9a4da150aae2f0cd9d6, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: f6a3e510bae37f243b6ba28262255bcd, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 4bf12c6e156777247bb4f57f2620d55f, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 3
+    RusName: "\u042F\u0433\u043E\u0434\u043D\u0430\u044F \u043A\u043E\u0440\u0437\u0438\u043D\u043A\u0430"
+    EngName: Berry basket
+    TurName: Berry sepeti
+    PicturePrefab: {fileID: 1790252923075369543, guid: 813bf9a34c128534bb46113e365e139a, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 6cbc83476a76d124db6315870920fde3, type: 2}
+    - {fileID: 2100000, guid: e6381a24da13b6c4e9e1ad404029b87f, type: 2}
+    - {fileID: 2100000, guid: e49016c5f0ea7bf42aad72975fa07589, type: 2}
+    - {fileID: 2100000, guid: 519e3bec9bf3ec34c949b3b3f0ec326e, type: 2}
+    - {fileID: 2100000, guid: 3c6db5c42ffea6e49926496fdde5dd06, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 70b5607c944026740bc80c24aad1637a, type: 3}
+    ColorIcon: {fileID: 21300000, guid: a085ea9c93606d84884bf25efb87a951, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 4
+    RusName: "\u0410\u043F\u0435\u043B\u044C\u0441\u0438\u043D\u043E\u0432\u044B\u0439
+      \u0427\u0438\u0437\u043A\u0435\u0439\u043A"
+    EngName: Orange Cheesecake
+    TurName: "Portakall\u0131 Cheesecake"
+    PicturePrefab: {fileID: 4181602706613569978, guid: 9a7dc0ae8503f8a4a98308892e0235bb, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 2ff2c8ff822feb34385bb8bdc5b69781, type: 2}
+    - {fileID: 2100000, guid: 18da6e371769e9c4993400e2e9081529, type: 2}
+    - {fileID: 2100000, guid: 9bd83159c01eab24d994368fba9a5b5f, type: 2}
+    - {fileID: 2100000, guid: db50b39ebcf0b184dac8e1ea64c7d02d, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 1ca573e11a2f3274893ee1b7b82912f2, type: 3}
+    ColorIcon: {fileID: 21300000, guid: e9796289299458f4295bf46e60282b77, type: 3}
+    BrushBonus: 50
+    FindNumberBonus: 1
+  - PictureID: 5
+    RusName: "\u0414\u043E\u043D\u0430\u0442 \u0411\u0430\u0431\u043B-\u0433\u0430\u043C"
+    EngName: Donut Bubblegum
+    TurName: "Donut \xC7iklet"
+    PicturePrefab: {fileID: 9217167635513716617, guid: 09172d2df4144b740ada22c04c769fbb, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 9ef687032a34f2e4d8c7d8341a6de84c, type: 2}
+    - {fileID: 2100000, guid: 3ac96044f9fbdef4fbaa6a74731a6e58, type: 2}
+    - {fileID: 2100000, guid: 9fe3ee668a29a264d9ee7ea342ae325d, type: 2}
+    - {fileID: 2100000, guid: fcd6f31fcf08e5b47a44e68f8a909785, type: 2}
+    - {fileID: 2100000, guid: b51618f351046924b8839afc16df7169, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 2ad52175cb734f24cbd17142848148f6, type: 3}
+    ColorIcon: {fileID: 21300000, guid: e43a954dd067799499e71143b31b99aa, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 6
+    RusName: "\u0427\u0438\u0437\u043A\u0435\u0439\u043A \u0441 \u043C\u0430\u043B\u0438\u043D\u043E\u0432\u043E\u0439
+      \u043D\u0430\u0447\u0438\u043D\u043A\u043E\u0439"
+    EngName: Cheesecake with raspberry filling
+    TurName: Ahududu dolgulu cheesecake
+    PicturePrefab: {fileID: 3028489072908807244, guid: eb4810696e843cd47b6ba755d4a46548, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 107f95aacb17e2b42b3d83da9a74ce02, type: 2}
+    - {fileID: 2100000, guid: 8c09f866978a7c54fa6bbf3e93a0a304, type: 2}
+    - {fileID: 2100000, guid: e76eeafc18f914f46b2e6e765617aff6, type: 2}
+    - {fileID: 2100000, guid: a80ea9f707e75a344bf70979d9b9bd50, type: 2}
+    - {fileID: 2100000, guid: 1367b2c087e582a468655f6b8359030a, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: c96c29f00d9f7404b8550b5146742ecb, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 893981e9d897b4145b775f5a0f3442a5, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 7
+    RusName: "\u0428\u043E\u043A\u043E\u043B\u0430\u0434 \u0440\u0443\u0447\u043D\u043E\u0439
+      \u0440\u0430\u0431\u043E\u0442\u044B"
+    EngName: Handmade chocolates
+    TurName: "El yap\u0131m\u0131 \xE7ikolatalar"
+    PicturePrefab: {fileID: 1307143815370681275, guid: 69a3247194e49ed459d5424a41d50770, type: 3}
+    SpawnPosition: {x: 0, y: -1, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: b0737fd65a61c534d8588fb2656c4e7c, type: 2}
+    - {fileID: 2100000, guid: ba9fd2bc208433c41be0c9420cd00f51, type: 2}
+    - {fileID: 2100000, guid: 7ba03f847f5dc4344998e35b54c19a86, type: 2}
+    - {fileID: 2100000, guid: 49f57a373d85d624f96600c9e32050e1, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 888d7c9f20d09274594e0bdcac23e227, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 02f224055a01e324aa3ac43bc17d5648, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 8
+    RusName: "\u0428\u043E\u043A\u043E\u043B\u0430\u0434\u043D\u043E-\u043A\u043E\u0444\u0435\u0439\u043D\u044B\u0439
+      \u0431\u0438\u0441\u043A\u0432\u0438\u0442"
+    EngName: Chocolate and coffee biscuit
+    TurName: "\xC7ikolatal\u0131 ve kahveli bisk\xFCvi"
+    PicturePrefab: {fileID: 5918568257910701378, guid: 681f0c2e2de81f14195b4c098ca5003f, type: 3}
+    SpawnPosition: {x: 0, y: -2, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: d9b37bfe6d55b0a4a9833d81ca2e6703, type: 2}
+    - {fileID: 2100000, guid: 0a13f2b1fad518144a974d22eefb1faa, type: 2}
+    - {fileID: 2100000, guid: 982ad4833cf8a854ca7a117bf89158fd, type: 2}
+    - {fileID: 2100000, guid: 52e795d51341adf4c8adc1c71f4ddcb4, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 4760dbca4ca6714478f40cd9fd301e7c, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 27f4c8cd53c564b458b18b74df09f519, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 9
+    RusName: "\u0412\u0430\u0444\u043B\u044F \u0441 \u043C\u0430\u043B\u0438\u043D\u043E\u0439"
+    EngName: Raspberry waffle
+    TurName: Ahududulu waffle
+    PicturePrefab: {fileID: 1324347574573150998, guid: 9daef4689abea874a8cab92c106ea921, type: 3}
+    SpawnPosition: {x: 0, y: -2, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: f6bee92cbf3ef7642b2317e76ebc1849, type: 2}
+    - {fileID: 2100000, guid: 7513c047ff0be7c469a0b5c5f3685233, type: 2}
+    - {fileID: 2100000, guid: abcb8c2b9713e4844876a914435fbed4, type: 2}
+    - {fileID: 2100000, guid: 7b88b615de358334d82af64f22b55bf8, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: f3abd932a3e6df7459e86fe543cd4498, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 54294aca32eba9c45b7a0ebfca004800, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 10
+    RusName: "\u0428\u043E\u043A\u043E\u043B\u0430\u0434\u043D\u044B\u0439 \u0442\u043E\u0440\u0442
+      \u0441 \u0432\u0438\u0448\u043D\u0435\u0439 \u0438 \u0432\u0437\u0431\u0438\u0442\u044B\u043C\u0438
+      \u0441\u043B\u0438\u0432\u043A\u0430\u043C\u0438"
+    EngName: Chocolate cake with cherries and whipped cream
+    TurName: "Vi\u015Fneli ve \xE7\u0131rp\u0131lm\u0131\u015F kremal\u0131 \xE7ikolatal\u0131
+      kek"
+    PicturePrefab: {fileID: 7388104561987562628, guid: 995dd4d56d20116459286d3426260dba, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 95eeab350d2d0454cab4ffb46454b024, type: 2}
+    - {fileID: 2100000, guid: 81e83a32706918c43b9512b680214af7, type: 2}
+    - {fileID: 2100000, guid: c843b928492f3f149b87f28b4af7cff9, type: 2}
+    - {fileID: 2100000, guid: b33ebdacb6d26194aaec6db4907d83d4, type: 2}
+    - {fileID: 2100000, guid: ca915d164b3030d40918646907c38009, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 944f23c6ec7be5942bfdde6c54f29e86, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 77959fbe7813c6d4db0b806b9c1d38f3, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 11
+    RusName: "\u0421\u043B\u0438\u0432\u043E\u0447\u043D\u043E-\u0448\u043E\u043A\u043E\u043B\u0430\u0434\u043D\u043E\u0435
+      \u043C\u0443\u0441\u0441\u043E\u0432\u043E\u043A \u043F\u0438\u0440\u043E\u0436\u043D\u043E\u0435"
+    EngName: Creamy chocolate mousse cake
+    TurName: "Kremal\u0131 \xE7ikolatal\u0131 mousse kek"
+    PicturePrefab: {fileID: 934275913830958722, guid: 818e90674cad0144e804f1d2acf5a9bd, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 95eeab350d2d0454cab4ffb46454b024, type: 2}
+    - {fileID: 2100000, guid: 81e83a32706918c43b9512b680214af7, type: 2}
+    - {fileID: 2100000, guid: c843b928492f3f149b87f28b4af7cff9, type: 2}
+    - {fileID: 2100000, guid: b33ebdacb6d26194aaec6db4907d83d4, type: 2}
+    - {fileID: 2100000, guid: ca915d164b3030d40918646907c38009, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 9a89d97ee73f07049ba855338fca2e2e, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 7dc8d27a6284c9f418077b649b538256, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 12
+    RusName: "\u0426\u0438\u0442\u0440\u0443\u0441\u043E\u0432\u043E\u0435 \u043F\u0435\u0447\u0435\u043D\u044C\u0435"
+    EngName: Citrus biscuits
+    TurName: "Narenciye bisk\xFCvileri"
+    PicturePrefab: {fileID: 8124187692194567690, guid: 6be48e594267abb49a79aac2cde1bf5a, type: 3}
+    SpawnPosition: {x: 0, y: -2, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 3f7277884c6641541872687cc3f9c42b, type: 2}
+    - {fileID: 2100000, guid: 96f86ac2bf3b0d24795544544b13803b, type: 2}
+    - {fileID: 2100000, guid: 7c3cf491ea0c4144c821112b1ed3e8aa, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: fb87b8abc8b840746b7e4e9006c77a90, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 227876c6332519342aa12443c4d7c69f, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 13
+    RusName: "\u041A\u043B\u0443\u0431\u043D\u0438\u0447\u043D\u044B\u0439 \u0440\u043E\u0436\u043E\u043A"
+    EngName: Strawberry cone
+    TurName: "\xC7ilekli k\xFClah"
+    PicturePrefab: {fileID: 5427248819603493438, guid: c5ab68d9bdbb3054b8e695c0f67fdf2c, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: ee6cb706a020fae48a19b8d8dadbfbc7, type: 2}
+    - {fileID: 2100000, guid: b43d7b4457b20104a894c1fba709f518, type: 2}
+    - {fileID: 2100000, guid: c06eeb5686007934a89c09c2c63b960b, type: 2}
+    - {fileID: 2100000, guid: 6ea23b4f112b2a7469eb9b0e9621f7a7, type: 2}
+    - {fileID: 2100000, guid: a2b4b941048e7f94581c9df344818e0c, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: e093371d7bb91564f8ae171345c2e58f, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 1c6ef81329aba4d469e22ee0b4b28ded, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 14
+    RusName: "\u0411\u0438\u0441\u043A\u0432\u0438\u0442 \u0441 \u043A\u0438\u0432\u0438"
+    EngName: Kiwi biscuit
+    TurName: "Kivi bisk\xFCvi"
+    PicturePrefab: {fileID: 6435982783005236828, guid: 5ddf8c72ed3163246b74dd8cac4cca51, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 393fc3cc1ff7cce42a56e6d9ca187299, type: 2}
+    - {fileID: 2100000, guid: 3f06639892ef87349bce3b8ef92c8a87, type: 2}
+    - {fileID: 2100000, guid: faba9e62a23a46c41a9d856feb9a197f, type: 2}
+    - {fileID: 2100000, guid: 903d9d330b5034b43b2e7d0bda7baa33, type: 2}
+    - {fileID: 2100000, guid: dd55862148ee1d2408642ad5494adda5, type: 2}
+    - {fileID: 2100000, guid: 51f5d33d5267e854bbfca704d3d341d5, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: bfd64844bdf218347998e8776d3a2112, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 086686c75e7f85b47b8c74a195cd1275, type: 3}
+    BrushBonus: 50
+    FindNumberBonus: 0
+  - PictureID: 15
+    RusName: "\u0411\u0438\u0441\u043A\u0432\u0438\u0442 \u0441 \u0430\u043F\u0435\u043B\u044C\u0441\u0438\u043D\u043E\u0432\u044B\u043C
+      \u043A\u0440\u0435\u043C\u043E\u043C"
+    EngName: Sponge cake with orange cream
+    TurName: "Portakal kremal\u0131 pandispanya"
+    PicturePrefab: {fileID: 3600537787382315185, guid: bcca24958aa3dca47a1d95ddc116df8e, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: d4e482a10ec62eb45866412fae8d206d, type: 2}
+    - {fileID: 2100000, guid: bb0273785f182cc439cf3cb8f2572fee, type: 2}
+    - {fileID: 2100000, guid: 59ef9864765a7e54391948748f79a1c6, type: 2}
+    - {fileID: 2100000, guid: 8b5897cd8bdcbc84988d57b8ce29eb10, type: 2}
+    - {fileID: 2100000, guid: a0e7fcbdfece86f4cabf53b1e21cac73, type: 2}
+    - {fileID: 2100000, guid: 7bfd52cb2645d65479202d097cb35409, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: b42348f56ce654f4cb1d762fce48f64b, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 7746c5ca64a08dd4d97409f19c3ebdda, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 16
+    RusName: "\u0428\u043E\u043A\u043E\u043B\u0430\u0434\u043D\u043E-\u043C\u0430\u043D\u0430\u0433\u043E\u0432\u044B\u0439
+      \u0447\u0438\u0437\u043A\u0435\u0439\u043A"
+    EngName: Chocolate-mango cheesecake
+    TurName: "\xC7ikolatal\u0131-mangolu cheesecake"
+    PicturePrefab: {fileID: 5629377876788087189, guid: 11c78da0189ff7d42a6ff463c6fa6f4f, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 1a7793fa3e450394b93b653507aff269, type: 2}
+    - {fileID: 2100000, guid: 96de5d78761c0434eb16870949c994df, type: 2}
+    - {fileID: 2100000, guid: 79ce2e2e9391efe458681dadc4e40c70, type: 2}
+    - {fileID: 2100000, guid: 5aebfbf9889b0614fb68c2b227022aa3, type: 2}
+    - {fileID: 2100000, guid: b55cd2517bcda8a43ab47575f6480141, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 10ac5f650df7c6b49b6fe81337f895c9, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 24b1002f88505f5439dc6988d470b304, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 17
+    RusName: "\u0428\u043E\u043A\u043E\u043B\u0430\u0434\u043D\u043E-\u0431\u0430\u043D\u0430\u043D\u043E\u0432\u044B\u0439
+      \u0442\u043E\u0440\u0442"
+    EngName: Chocolate banana cake
+    TurName: "\xC7ikolatal\u0131 muzlu kek"
+    PicturePrefab: {fileID: 1673379882613417253, guid: 03b05eafd1ca0ad44947625699462ca8, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: a3ad01d765bfe3b4baa3d6af8c84046a, type: 2}
+    - {fileID: 2100000, guid: e14d3ecf629473b4485ee5fce02326fe, type: 2}
+    - {fileID: 2100000, guid: c8ec43e834a728d429dfa486a1c8d0ea, type: 2}
+    - {fileID: 2100000, guid: 5bcf5ae9e24a1614eb6536b1bdb4813f, type: 2}
+    - {fileID: 2100000, guid: de5929b73c0608941b03bab3b16c857d, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 0b08083634f083644b3051d6951b7b68, type: 3}
+    ColorIcon: {fileID: 21300000, guid: e4bd4d140fc1cd2488914d245ccc7a49, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 18
+    RusName: "\u0422\u043E\u0440\u0442 \u041A\u0440\u0430\u0441\u043D\u044B\u0439
+      \u0431\u0430\u0440\u0445\u0430\u0442"
+    EngName: Red velvet cake
+    TurName: "K\u0131rm\u0131z\u0131 kadife kek"
+    PicturePrefab: {fileID: 6288603084164939311, guid: b51048880e94851458d07a1568208814, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: aa4b87b4bb7f1b44e8e70d72a56ff907, type: 2}
+    - {fileID: 2100000, guid: 5f084f5b77629f24da2ec9236a2b5298, type: 2}
+    - {fileID: 2100000, guid: fbb134a09a286a34d9c4400ef77df8e7, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: c015c6d232684f94eacff519cda1826e, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 659f3b93aebc0fd479972c0994dedd16, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 19
+    RusName: "\u0412\u0438\u0448\u043D\u0435\u0432\u044B\u0439 \u0431\u0438\u0441\u043A\u0432\u0438\u0442"
+    EngName: Cherry biscuit
+    TurName: "Vi\u015Fneli bisk\xFCvi"
+    PicturePrefab: {fileID: 6921796660554635901, guid: cb027d81ce800974cb5b1b290e2075c8, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: f62f93aa9644e364188d11cfdf0e5bf8, type: 2}
+    - {fileID: 2100000, guid: 23b9b3587836e884eb8981af48478223, type: 2}
+    - {fileID: 2100000, guid: 2c3a65f65f142984b9421e5835f50873, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 6612305f1c1fe954485a709df0b18581, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 1a882f975aec5b54cab582627a2600d8, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 20
+    RusName: "\u041A\u043B\u0443\u0431\u043D\u0438\u0447\u043D\u043E-\u0432\u0430\u043D\u0438\u043B\u044C\u043D\u044B\u0439
+      \u0431\u0438\u0441\u043A\u0432\u0438\u0442 \u0417\u0430\u0439\u043A\u0430"
+    EngName: Strawberry-vanilla biscuit Bunny
+    TurName: "\xC7ilekli vanilyal\u0131 bisk\xFCvi Bunny"
+    PicturePrefab: {fileID: 7594453067742472618, guid: d251f4134850155439c99f351b26549f, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 166d258ec0980214f93449b0c7772564, type: 2}
+    - {fileID: 2100000, guid: 6bf067673b8db1347a0c90fffd578ea0, type: 2}
+    - {fileID: 2100000, guid: be5b2a2910a355045b9acaed56940740, type: 2}
+    - {fileID: 2100000, guid: ebbc2b1f65ef23944a3db0d82f1e6f42, type: 2}
+    - {fileID: 2100000, guid: 1647097eb9076324eb58ec988865be2a, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 83131e16d45c8ba418f73dd1ce594cd4, type: 3}
+    ColorIcon: {fileID: 21300000, guid: c34b11089238cc043a1a2decb22c53f3, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 21
+    RusName: "\u041A\u0430\u0440\u0430\u043C\u0435\u043B\u044C\u043D\u043E-\u0448\u043E\u043A\u043E\u043B\u0430\u0434\u043D\u044B\u0439
+      \u0447\u0438\u0437\u043A\u0435\u0439\u043A"
+    EngName: Caramel-chocolate cheesecake
+    TurName: "Karamelli-\xE7ikolatal\u0131 cheesecake"
+    PicturePrefab: {fileID: 7281712700737860297, guid: eae39bb45c427524589e55458de7f95f, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: a316c5c8669a41f4bbef82b22e3ac2e6, type: 2}
+    - {fileID: 2100000, guid: af494b9c40fe4af4a8360924836bc983, type: 2}
+    - {fileID: 2100000, guid: 1ba25634ab26c2b4c839f266dfe7358c, type: 2}
+    - {fileID: 2100000, guid: e2b3e57e1948d1948ab455a22fb52eda, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 92922718eb0fb5c4fab4f9556938d00c, type: 3}
+    ColorIcon: {fileID: 21300000, guid: c455831e107108c4595c5fa446b0a721, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 22
+    RusName: "\u0428\u043E\u043A\u043E\u043B\u0430\u0434\u043D\u044B\u0439 \u0447\u0438\u0437\u043A\u0435\u0439\u043A"
+    EngName: Chocolate cheesecake
+    TurName: "\xC7ikolatal\u0131 cheesecake"
+    PicturePrefab: {fileID: 5296876573192152711, guid: c517cf46aae4e9246ab15453afe6dc18, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 30464080ab1bde2459f905be9d4b51ff, type: 2}
+    - {fileID: 2100000, guid: 54be1265c3ac9154ca0a2285e71f59e8, type: 2}
+    - {fileID: 2100000, guid: dc05d6bf5f5f0ca47b2a2115890c4aa3, type: 2}
+    - {fileID: 2100000, guid: 471e7a923c6d90f4b9fbab49782c6b9f, type: 2}
+    - {fileID: 2100000, guid: c4171955d19e4f34aa112acdb2b56964, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 26d28480e06bfbc4585bee3632becd4f, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 182ce7bb4716beb4385355b4d7ce9bc9, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 23
+    RusName: "\u0424\u0440\u0443\u043A\u0442\u043E\u0432\u043E-\u044F\u0433\u043E\u0434\u043D\u0430\u044F
+      \u043A\u043E\u0440\u0437\u0438\u043D\u043A\u0430"
+    EngName: Fruit and berry basket
+    TurName: "Meyve ve \xE7ilek sepeti"
+    PicturePrefab: {fileID: 3096517212322990628, guid: 15683716c6dfe0a4a91622e5fc3ac936, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 021b6bf8c271169459a932f1c493c0d8, type: 2}
+    - {fileID: 2100000, guid: c85c21e264ca9274093d3624392065af, type: 2}
+    - {fileID: 2100000, guid: 4588b7b2ae55ab74182f77795f9ec013, type: 2}
+    - {fileID: 2100000, guid: d14ed1f078cc01b48bcd97a0a0f6cbaf, type: 2}
+    - {fileID: 2100000, guid: 7ce14793b0b7248449b0e1313d001474, type: 2}
+    - {fileID: 2100000, guid: 327312dfcde1aad478d085d303a8e898, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 91d700e5327f8da488c9fd48f70770d7, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 2eb46697a5dc97b468cb73e95c204537, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 24
+    RusName: "\u041C\u0430\u043D\u0433\u043E\u0432\u044B\u0439 \u0431\u0438\u0441\u043A\u0432\u0438\u0442
+      \u041A\u043E\u0442\u0438\u043A"
+    EngName: Mango biscuit Kitten
+    TurName: "Mango Bisk\xFCvili Yavru Kedi"
+    PicturePrefab: {fileID: 8814349057926591679, guid: 846c2f37a5a4ffe4d9a04fd3dade7e72, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 596c03ead885f3c4ea50171036d2b10e, type: 2}
+    - {fileID: 2100000, guid: 04a3ef53a7ea65148a50bb8dc4f10481, type: 2}
+    - {fileID: 2100000, guid: 4fb41b84a4fd6904188c66665731d6b9, type: 2}
+    - {fileID: 2100000, guid: bfa3b70a84220dd42a27a9a105966816, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 0f3a135ffb310c24eaa23e8eb4375211, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 151eda86cfce2494ea083b1c80d6d33b, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 25
+    RusName: "\u0412\u0438\u0448\u043D\u0435\u0432\u0430\u044F \u0432\u0430\u0444\u043B\u044F
+      \u0441\u043E \u0432\u0437\u0431\u0438\u0442\u044B\u043C\u0438 \u0441\u043B\u0438\u0432\u043A\u0430\u043C\u0438"
+    EngName: Cherry waffle with whipped cream
+    TurName: "\xC7\u0131rp\u0131lm\u0131\u015F kremal\u0131 vi\u015Fneli waffle"
+    PicturePrefab: {fileID: 300396832111693646, guid: d43b22696ba6945438b0267b68fef046, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 5607c767d5d841c4f8e9dde3ad2edeb0, type: 2}
+    - {fileID: 2100000, guid: e4897596b2c50dc44aee2d391ebfe7ab, type: 2}
+    - {fileID: 2100000, guid: dff6603a77eb54445b0def27e866c3ec, type: 2}
+    - {fileID: 2100000, guid: 05a20c3babd2ce0449c8357f63cb0e15, type: 2}
+    - {fileID: 2100000, guid: 790be748bca92404a92f39ee872370dc, type: 2}
+    - {fileID: 2100000, guid: 0a6b0ba7b817df44ab00958a283a82e7, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 58181fddcb2caa94bbed7e5ebcd72ec0, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 00776448006d2db4eb9a79f012e4cecd, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 26
+    RusName: "\u0422\u0440\u0435\u0445\u044A\u044F\u0440\u0443\u0441\u043D\u044B\u0439
+      \u0442\u043E\u0440\u0442"
+    EngName: Three-tier cake
+    TurName: "\xDC\xE7 katl\u0131 pasta"
+    PicturePrefab: {fileID: 6435234489766302498, guid: dfc8e23e510e9f246b479dd3d10d068e, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 439b3b5c2a627a446986defce0f59b4b, type: 2}
+    - {fileID: 2100000, guid: 28890eb70fdcb024bbf8e5726a21812d, type: 2}
+    - {fileID: 2100000, guid: 2cd538da212d267458b97f33a39507d3, type: 2}
+    - {fileID: 2100000, guid: 32ad9a051bb7c2946a27a0a00863a885, type: 2}
+    - {fileID: 2100000, guid: 4c995e3f9aa34f642ac1a2413b36f879, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: f5e70f8281b697543b036b73c2415efa, type: 3}
+    ColorIcon: {fileID: 21300000, guid: 3ecae6dd0b31a2e45aad8a685d82595e, type: 3}
+    BrushBonus: 0
+    FindNumberBonus: 0
+  - PictureID: 27
+    RusName: "\u0428\u043E\u043A\u043E\u043B\u0430\u0434\u043D\u043E-\u043A\u0430\u0440\u0430\u043C\u0435\u043B\u044C\u043D\u044B\u0439
+      \u0442\u043E\u0440\u0442"
+    EngName: Chocolate caramel cake
+    TurName: "\xC7ikolatal\u0131 karamelli kek"
+    PicturePrefab: {fileID: 6023432662040229880, guid: e62def746e48a7e4f9b886bea2dde488, type: 3}
+    SpawnPosition: {x: 0, y: -4, z: 0}
+    PictureMaterials:
+    - {fileID: 2100000, guid: 3eb8969bda782804d80dc989ae1e75ce, type: 2}
+    - {fileID: 2100000, guid: 3a151ed1d2b23f9419fc2a083c4882bb, type: 2}
+    - {fileID: 2100000, guid: ec5d175a284d4a244ab1f0ea845bcf7b, type: 2}
+    - {fileID: 2100000, guid: 553969b5bafa40c4d942fbfb1798da03, type: 2}
+    - {fileID: 2100000, guid: e43ffd12c16a3f84d9d10f6b140dcb5d, type: 2}
+    - {fileID: 2100000, guid: e28afd710599d3b4ba2e0cfb48c4944e, type: 2}
+    NonColorIcon: {fileID: 21300000, guid: 3f55426e58e058d4b82d25d06151e485, type: 3}
+    ColorIcon: {fileID: 21300000, guid: ab6632acfb9682e43b4cfa049c325a18, type: 3}
+    BrushBonus: 1000
+    FindNumberBonus: 3
+  ChoosePicturePanel: {fileID: 5946522137056069520, guid: cec4027659b1e07479256330d3482586, type: 3}
