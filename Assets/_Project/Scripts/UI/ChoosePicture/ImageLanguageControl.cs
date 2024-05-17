@@ -37,7 +37,7 @@ namespace _Project.Scripts.UI.ChoosePicture
                     _settingsImage.sprite = _settingsTur;
                     break;
             }
-            _settingsImage.SetNativeSize();
+            //_settingsImage.SetNativeSize();
         }
     }
 }
