@@ -548,6 +548,7 @@ GameObject:
   - component: {fileID: 147384163167745656}
   - component: {fileID: 6234185740363816467}
   - component: {fileID: 5112927553745666835}
+  - component: {fileID: 7653805941969959323}
   m_Layer: 5
   m_Name: RateGameButton
   m_TagString: Untagged
@@ -675,6 +676,19 @@ MonoBehaviour:
   _RUSButtonImageDown: {fileID: 21300000, guid: f7805ec4fc2030d438da96724e0ebeb5, type: 3}
   _TURButtonImage: {fileID: 21300000, guid: 93e5a5052cce5394492ba57e3b880e85, type: 3}
   _TURButtonImageDown: {fileID: 21300000, guid: 341f75aaf9d81f5469ae9a210e8a412c, type: 3}
+--- !u!114 &7653805941969959323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2221458549275170459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4830948c093e45189b31e6f360f1375f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 6234185740363816467}
 --- !u!1 &2436255169942399440
 GameObject:
   m_ObjectHideFlags: 0

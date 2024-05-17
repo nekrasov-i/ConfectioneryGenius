@@ -1,6 +1,7 @@
 using _Project.Scripts.Infrastructure.FSM;
 using _Project.Scripts.Infrastructure.FSM.State;
 using _Project.Scripts.Services.AdsService;
+using _Project.Scripts.Services.SoundAndMusicService;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,14 +15,15 @@ namespace _Project.Scripts.UI.WinPictureMenu
         [SerializeField] private Button _photoButton;
         [SerializeField] private TMP_Text _brushBonusText;
         [SerializeField] private TMP_Text _findNumberText;
-        [SerializeField] private AudioSource _audioSource;
         
         private IGameStateMachine _gameStateMachine;
         private IAdsService _adsService;
+        private IGameSound _gameSound;
 
         [Inject]
-        public void Construct(IGameStateMachine gameStateMachine, IAdsService adsService)
+        public void Construct(IGameStateMachine gameStateMachine, IAdsService adsService, IGameSound gameSound)
         {
+            _gameSound = gameSound;
             _adsService = adsService;
             _gameStateMachine = gameStateMachine;
         }
@@ -39,20 +41,20 @@ namespace _Project.Scripts.UI.WinPictureMenu
 
         private void OpenPhotoState()
         {
-            _audioSource.Play();
+            _gameSound.PlaySound();
             _gameStateMachine.Enter<PhotoState>();
             Destroy(gameObject);
         }
 
         private void OpenChoosePictureMenu()
         {
-            _audioSource.Play();
+            _gameSound.PlaySound();
             _adsService.ShowShowFullscreen(CloseWinMenu);
         }
 
         private void CloseWinMenu(bool b)
         {
-            _audioSource.Play();
+            _gameSound.PlayMusic();
             _gameStateMachine.Enter<PictureChooseState>();
             Destroy(gameObject);
         }

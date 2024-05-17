@@ -1,5 +1,6 @@
 ﻿using System;
 using _Project.Scripts.Services.PlayerProgressService;
+using _Project.Scripts.Services.SoundAndMusicService;
 using GamePush;
 using UnityEngine;
 
@@ -8,12 +9,14 @@ namespace _Project.Scripts.Services.AdsService
     public class AdsService : IAdsService
     {
         private readonly IPlayerProgressService _playerProgressService;
+        private readonly IGameSound _gameSound;
         public event Action RewardedVideoReady;
         public bool IsRewardedVideoReady { get; }
 
-        public AdsService(IPlayerProgressService playerProgressService)
+        public AdsService(IPlayerProgressService playerProgressService, IGameSound gameSound)
         {
             _playerProgressService = playerProgressService;
+            _gameSound = gameSound;
         }
 
         public void ShowRewardedVideo(Action onVideoFinished)
@@ -24,10 +27,9 @@ namespace _Project.Scripts.Services.AdsService
         public void ShowShowFullscreen(Action<bool> closeWinMenu)
         {
             if (IsDisableAverts()) return;
-            Debug.Log("проверяем доступность рекламы");
             if (GP_Ads.IsFullscreenAvailable())
             {
-                Debug.Log("показываем рекламу");
+                _gameSound.StopMusic();
                 GP_Ads.ShowFullscreen(null, closeWinMenu);
             }
             else

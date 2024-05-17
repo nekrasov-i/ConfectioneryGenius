@@ -22,8 +22,8 @@ namespace _Project.Scripts.Data
         public PlayerProgress()
         {
             _pictureIds = new List<int>();
-            _currentPaintBrush = 60;
-            _currentFindNumber = 60;
+            _currentPaintBrush = 100;
+            _currentFindNumber = 2;
             _language = GP_Language.Current();
         }
 
