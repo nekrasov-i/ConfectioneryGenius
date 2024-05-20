@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using _Project.Scripts.Infrastructure.Factories;
 using _Project.Scripts.Infrastructure.FSM;
 using _Project.Scripts.Infrastructure.FSM.State;
+using _Project.Scripts.Services.SoundAndMusicService;
 using _Project.Scripts.UI.Factories;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,11 +19,13 @@ namespace _Project.Scripts.UI.ChoosePicture
         private IGameFactory _gameFactory;
         private IGameStateMachine _gameStateMachine;
         private IUIFactory _uiFactory;
+        private IGameSound _gameSound;
 
         [Inject]
         private void Construct(IGameFactory gameFactory, IGameStateMachine gameStateMachine,
-            IUIFactory uiFactory)
+            IUIFactory uiFactory, IGameSound gameSound)
         {
+            _gameSound = gameSound;
             _uiFactory = uiFactory;
             _gameStateMachine = gameStateMachine;
             _gameFactory = gameFactory;
@@ -39,6 +42,7 @@ namespace _Project.Scripts.UI.ChoosePicture
 
         private void ChoosePicture(PictureInfo pictureInfo)
         {
+            _gameSound.PlaySound();
             _gameFactory.CreatePicture(pictureInfo.PictureId);
             _gameStateMachine.Enter<GameLoopState>();
             Destroy(gameObject);

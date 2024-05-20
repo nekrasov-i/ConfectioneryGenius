@@ -31,13 +31,18 @@ namespace _Project.Scripts.UI.Shop
         [SerializeField] private TMP_Text _itemOnePrice;
         [SerializeField] private TMP_Text _itemTwoPrice;
         [SerializeField] private TMP_Text _itemThreePrice;
-
+        
+        [SerializeField] private Image _itemOneImage;
+        
+        
         private IShopService _shopService;
         private IPlayerProgressService _playerProgressService;
         private IStaticDataService _staticDataService;
         private IGameStateMachine _gameStateMachine;
         private IWindowsService _windowsService;
         private IGameSound _gameSound;
+
+        private string IdForFirstItem;
 
         [Inject]
         private void Construct(IShopService shopService, IPlayerProgressService playerProgressService,
@@ -63,9 +68,22 @@ namespace _Project.Scripts.UI.Shop
 
         private void InitializeShopItem()
         {
-            var shopItem = _staticDataService.ForShopItem("2");
-            _itemOneVolume.text = shopItem.Volume.ToString();
-            _itemOnePrice.text = shopItem.Price.ToString();
+            if(_playerProgressService.Progress.DisableAdverts)
+            {
+                IdForFirstItem = "2";
+                var shopItem = _staticDataService.ForShopItem(IdForFirstItem);
+                _itemOneVolume.text = shopItem.Volume.ToString();
+                _itemOnePrice.text = shopItem.Price.ToString();
+                _itemOneImage.sprite = shopItem.Icon;
+            }
+            else
+            {
+                IdForFirstItem = "1";
+                var shopItem = _staticDataService.ForShopItem(IdForFirstItem);
+                _itemOneVolume.text = shopItem.Name;
+                _itemOnePrice.text = shopItem.Price.ToString();
+                _itemOneImage.sprite = shopItem.Icon;
+            }
             var shopItem2 = _staticDataService.ForShopItem("3");
             _itemTwoVolume.text = shopItem2.Volume.ToString();
             _itemTwoPrice.text = shopItem2.Price.ToString();
@@ -109,7 +127,7 @@ namespace _Project.Scripts.UI.Shop
         private void OnItemOneButtonClick()
         {
             _gameSound.PlaySound();
-            _shopService.Buy("2");
+            _shopService.Buy(IdForFirstItem);
             OnExitButtonClick();
         }
 
