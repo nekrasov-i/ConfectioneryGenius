@@ -84,10 +84,10 @@ namespace _Project.Scripts.UI.Shop
                 _itemOnePrice.text = shopItem.Price.ToString();
                 _itemOneImage.sprite = shopItem.Icon;
             }
-            var shopItem2 = _staticDataService.ForShopItem("3");
+            var shopItem2 = _staticDataService.ForShopItem("4789");
             _itemTwoVolume.text = shopItem2.Volume.ToString();
             _itemTwoPrice.text = shopItem2.Price.ToString();
-            var shopItem3 = _staticDataService.ForShopItem("4");
+            var shopItem3 = _staticDataService.ForShopItem("4790");
             _itemThreeVolume.text = shopItem3.Volume.ToString();
             _itemThreePrice.text = shopItem3.Price.ToString();
         }
