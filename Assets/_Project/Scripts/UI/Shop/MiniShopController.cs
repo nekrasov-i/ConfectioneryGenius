@@ -70,7 +70,7 @@ namespace _Project.Scripts.UI.Shop
         {
             if(_playerProgressService.Progress.DisableAdverts)
             {
-                IdForFirstItem = "2";
+                IdForFirstItem = "4788";
                 var shopItem = _staticDataService.ForShopItem(IdForFirstItem);
                 _itemOneVolume.text = shopItem.Volume.ToString();
                 _itemOnePrice.text = shopItem.Price.ToString();
@@ -78,7 +78,7 @@ namespace _Project.Scripts.UI.Shop
             }
             else
             {
-                IdForFirstItem = "1";
+                IdForFirstItem = "4054";
                 var shopItem = _staticDataService.ForShopItem(IdForFirstItem);
                 _itemOneVolume.text = shopItem.Name;
                 _itemOnePrice.text = shopItem.Price.ToString();
@@ -113,14 +113,14 @@ namespace _Project.Scripts.UI.Shop
         private void OnItemThreeButtonClick()
         {
             _gameSound.PlaySound();
-            _shopService.Buy("4");
+            _shopService.Buy("4790");
             OnExitButtonClick();
         }
 
         private void OnItemTwoButtonClick()
         {
             _gameSound.PlaySound();
-            _shopService.Buy("3");
+            _shopService.Buy("4789");
             OnExitButtonClick();
         }
 

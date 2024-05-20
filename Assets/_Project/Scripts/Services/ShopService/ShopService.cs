@@ -69,13 +69,13 @@ namespace _Project.Scripts.Services.ShopService
         {
             switch (productIdOrTag)
             {
-                case "2":
+                case "4788":
                     AddPaintBrush(productIdOrTag);
                     break;
-                case "3":
+                case "4789":
                     AddPaintBrush(productIdOrTag);
                     break;
-                case "4":
+                case "4790":
                     AddFindNumber(productIdOrTag);
                     break;
                 default:

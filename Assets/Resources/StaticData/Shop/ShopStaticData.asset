@@ -13,32 +13,32 @@ MonoBehaviour:
   m_Name: ShopStaticData
   m_EditorClassIdentifier: 
   ShopItems:
-  - Id: 1
+  - Id: 4054
     Name: "\u041E\u0442\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0440\u0435\u043A\u043B\u0430\u043C\u0443"
     Description: "\u041E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u0440\u0435\u043A\u043B\u0430\u043C\u044B
       \u043C\u0435\u0436\u0434\u0443 \u0443\u0440\u043E\u0432\u043D\u044F\u043C\u0438."
     Volume: 0
     Price: 50
-    Icon: {fileID: 21300000, guid: f36c988ebe941ce48bc7b6dee8f3f76e, type: 3}
-  - Id: 2
+    Icon: {fileID: 21300000, guid: 2d562d056e70ce94f9c9efdd4c9e5c90, type: 3}
+  - Id: 4788
     Name: "500 \u043A\u0438\u0441\u0442\u043E\u0447\u0435\u0435\u043A"
     Description: "\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u0442 500 \u0431\u043E\u043B\u044C\u0448\u0438\u0445
       \u043A\u0438\u0441\u0442\u043E\u0447\u0435\u043A"
     Volume: 500
     Price: 30
-    Icon: {fileID: 21300000, guid: f36c988ebe941ce48bc7b6dee8f3f76e, type: 3}
-  - Id: 3
+    Icon: {fileID: 21300000, guid: 4785f9e62fea4544ab11a15af26be702, type: 3}
+  - Id: 4789
     Name: "1000 \u043A\u0438\u0441\u0442\u043E\u0447\u0435\u043A"
     Description: "\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u0442 1000 \u0431\u043E\u043B\u044C\u0448\u0438\u0445
       \u043A\u0438\u0441\u0442\u043E\u0447\u0435\u043A"
     Volume: 1000
     Price: 50
-    Icon: {fileID: 21300000, guid: f36c988ebe941ce48bc7b6dee8f3f76e, type: 3}
-  - Id: 4
+    Icon: {fileID: 21300000, guid: 4785f9e62fea4544ab11a15af26be702, type: 3}
+  - Id: 4790
     Name: "5 \u043B\u0443\u043F"
     Description: "\u0434\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u0442 5 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u0435\u0439
       \u043D\u0430\u0439\u0442\u0438 \u043D\u0435 \u0437\u0430\u043A\u0440\u0430\u0448\u0435\u043D\u043D\u044B\u0439
       \u043A\u0443\u0431."
     Volume: 5
     Price: 50
-    Icon: {fileID: 21300000, guid: f36c988ebe941ce48bc7b6dee8f3f76e, type: 3}
+    Icon: {fileID: 21300000, guid: 02fbf50603596874989138d531a0330b, type: 3}
