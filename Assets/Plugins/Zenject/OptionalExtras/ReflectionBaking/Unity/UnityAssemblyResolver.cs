@@ -29,6 +29,7 @@ namespace Zenject.ReflectionBaking
                 }
 #endif
 
+
                 _appDomainAssemblyLocations[assemblies[i].FullName] = assemblies[i].Location;
 
                 AddSearchDirectory(Path.GetDirectoryName(assemblies[i].Location));

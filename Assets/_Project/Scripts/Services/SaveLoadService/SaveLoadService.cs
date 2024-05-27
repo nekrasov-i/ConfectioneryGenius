@@ -31,6 +31,8 @@ namespace _Project.Scripts.Services.SaveLoadService
         public PlayerProgress LoadProgress()
         {
             var playerProgress = GP_Player.GetString(PlayerProgress)?.ToDeserialized<PlayerProgress>();
+            if (playerProgress != null)
+                if(playerProgress.DisableAdverts) GP_Ads.CloseSticky();
             return playerProgress;
         }
     }

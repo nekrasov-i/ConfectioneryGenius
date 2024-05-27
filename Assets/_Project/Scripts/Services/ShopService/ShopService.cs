@@ -24,7 +24,6 @@ namespace _Project.Scripts.Services.ShopService
         {
             GP_Payments.OnFetchPlayerPurchases += OnFetchPlayerPurchases;
             GP_Payments.Fetch();
-            GP_Payments.OnFetchPlayerPurchases -= OnFetchPlayerPurchases;
         }
 
         public void Buy(string iD)
@@ -37,6 +36,7 @@ namespace _Project.Scripts.Services.ShopService
 
         private void OnFetchPlayerPurchases(List<FetchPlayerPurchases> purchases)
         {
+            GP_Payments.OnFetchPlayerPurchases -= OnFetchPlayerPurchases;
             foreach (FetchPlayerPurchases purchase in purchases)
             {
                 OnPurchaseSuccess(purchase.productId.ToString());
@@ -48,7 +48,7 @@ namespace _Project.Scripts.Services.ShopService
             Debug.Log("PURCHASE: SUCCESS: " + productIdOrTag);
             switch (productIdOrTag)
             {
-                case "1":
+                case "4054":
                     DisableAdverts();
                     break;
                 default:
@@ -60,6 +60,7 @@ namespace _Project.Scripts.Services.ShopService
         private void DisableAdverts()
         {
             _playerProgressService.Progress.SetDisableAdverts();
+            GP_Ads.CloseSticky();
             _saveLoadService.SaveProgress();
         }
 

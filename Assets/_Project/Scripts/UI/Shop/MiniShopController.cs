@@ -5,6 +5,7 @@ using _Project.Scripts.Services.ShopService;
 using _Project.Scripts.Services.SoundAndMusicService;
 using _Project.Scripts.Services.StaticDataService;
 using _Project.Scripts.Services.WindowsService;
+using _Project.Scripts.StaticData.UIText;
 using GamePush;
 using TMPro;
 using UnityEngine;
@@ -31,10 +32,11 @@ namespace _Project.Scripts.UI.Shop
         [SerializeField] private TMP_Text _itemOnePrice;
         [SerializeField] private TMP_Text _itemTwoPrice;
         [SerializeField] private TMP_Text _itemThreePrice;
-        
+
         [SerializeField] private Image _itemOneImage;
-        
-        
+        [SerializeField] private TMP_Text _authorisation; 
+
+
         private IShopService _shopService;
         private IPlayerProgressService _playerProgressService;
         private IStaticDataService _staticDataService;
@@ -46,7 +48,8 @@ namespace _Project.Scripts.UI.Shop
 
         [Inject]
         private void Construct(IShopService shopService, IPlayerProgressService playerProgressService,
-            IStaticDataService staticDataService, IGameStateMachine gameStateMachine, IWindowsService windowsService, IGameSound gameSound)
+            IStaticDataService staticDataService, IGameStateMachine gameStateMachine, IWindowsService windowsService,
+            IGameSound gameSound)
         {
             _gameSound = gameSound;
             _windowsService = windowsService;
@@ -68,7 +71,7 @@ namespace _Project.Scripts.UI.Shop
 
         private void InitializeShopItem()
         {
-            if(_playerProgressService.Progress.DisableAdverts)
+            if (_playerProgressService.Progress.DisableAdverts)
             {
                 IdForFirstItem = "4788";
                 var shopItem = _staticDataService.ForShopItem(IdForFirstItem);
@@ -80,10 +83,11 @@ namespace _Project.Scripts.UI.Shop
             {
                 IdForFirstItem = "4054";
                 var shopItem = _staticDataService.ForShopItem(IdForFirstItem);
-                _itemOneVolume.text = shopItem.Name;
+                _itemOneVolume.text = GetShopItemName();
                 _itemOnePrice.text = shopItem.Price.ToString();
                 _itemOneImage.sprite = shopItem.Icon;
             }
+
             var shopItem2 = _staticDataService.ForShopItem("4789");
             _itemTwoVolume.text = shopItem2.Volume.ToString();
             _itemTwoPrice.text = shopItem2.Price.ToString();
@@ -92,18 +96,41 @@ namespace _Project.Scripts.UI.Shop
             _itemThreePrice.text = shopItem3.Price.ToString();
         }
 
+        private string GetShopItemName()
+        {
+            var shopItem = _staticDataService.ForUIData(UIID.StopADS);
+            string shopName;
+            switch (_playerProgressService.Progress.Language)
+            {
+                case Language.Russian:
+                    shopName = shopItem.RusText;
+                    break;
+                case Language.Turkish:
+                    shopName = shopItem.TurText;
+                    break;
+                default:
+                    shopName = shopItem.EngText;
+                    break;
+            }
+
+            return shopName;
+        }
+
         private void ChooseShopLanguage()
         {
             switch (_playerProgressService.Progress.Language)
             {
                 case Language.Turkish:
                     _shopImage.sprite = _shopTur;
+                    _authorisation.text = _staticDataService.ForUIData(UIID.MiniShop).TurText;
                     break;
                 case Language.Russian:
                     _shopImage.sprite = _shopRus;
+                    _authorisation.text = _staticDataService.ForUIData(UIID.MiniShop).RusText;
                     break;
                 default:
                     _shopImage.sprite = _shopEng;
+                    _authorisation.text = _staticDataService.ForUIData(UIID.MiniShop).EngText;
                     break;
             }
 
@@ -134,8 +161,8 @@ namespace _Project.Scripts.UI.Shop
         private void OnExitButtonClick()
         {
             _gameSound.PlaySound();
-                Destroy(gameObject);
-            if(_gameStateMachine.CurrentState is GameMenuState) 
+            Destroy(gameObject);
+            if (_gameStateMachine.CurrentState is GameMenuState)
                 _windowsService.OpenWindow(WindowID.GameMenu);
         }
     }

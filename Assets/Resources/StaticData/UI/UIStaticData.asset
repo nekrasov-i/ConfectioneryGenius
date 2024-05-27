@@ -70,3 +70,13 @@ MonoBehaviour:
     TurText: "Yeterli aletiniz yoksa, sat\u0131n almak kolayd\u0131r. \u0130yile\u015Ftirme
       i\xE7in geri bildirim ve yorum b\u0131rak\u0131n. Mutfak maceralar\u0131n\u0131za
       do\u011Fru ilerleyin."
+  - ID: 5
+    RusText: "\u041E\u0442\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0440\u0435\u043A\u043B\u0430\u043C\u0443"
+    EngText: Disable adverts
+    TurText: "Reklamlar\u0131 kapat\u0131n"
+  - ID: 6
+    RusText: "\u0414\u043B\u044F \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u0438\u044F
+      \u043F\u043E\u043A\u0443\u043F\u043E\u043A \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u0430
+      \u0430\u0432\u0442\u043E\u0440\u0438\u0437\u0430\u0446\u0438\u044F"
+    EngText: Authorisation is required to make purchases
+    TurText: "Sat\u0131n alma yapmak i\xE7in yetki gereklidir"
