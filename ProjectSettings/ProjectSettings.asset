@@ -453,7 +453,7 @@ PlayerSettings:
     PROGRESS_BAR_BORDER_COLOR: 
     PROGRESS_BAR_FILL_COLOR: 
     PROJECT_ID: 12550
-    SHOW_PRELOADER_AD: 
+    SHOW_PRELOADER_AD: true
     TOKEN: oUp0khXE5JeF6b2ynhqoL4ZU1YAMFSUS
   mobileMTRendering:
     Android: 1

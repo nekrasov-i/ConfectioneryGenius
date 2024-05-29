@@ -1,6 +1,7 @@
 using _Project.Scripts.Infrastructure.FSM;
 using _Project.Scripts.Infrastructure.FSM.State;
 using _Project.Scripts.Services.AdsService;
+using _Project.Scripts.Services.PlayerProgressService;
 using _Project.Scripts.Services.SoundAndMusicService;
 using TMPro;
 using UnityEngine;
@@ -19,10 +20,12 @@ namespace _Project.Scripts.UI.WinPictureMenu
         private IGameStateMachine _gameStateMachine;
         private IAdsService _adsService;
         private IGameSound _gameSound;
+        private IPlayerProgressService _playerProgressService;
 
         [Inject]
-        public void Construct(IGameStateMachine gameStateMachine, IAdsService adsService, IGameSound gameSound)
+        public void Construct(IGameStateMachine gameStateMachine, IAdsService adsService, IGameSound gameSound, IPlayerProgressService playerProgressService)
         {
+            _playerProgressService = playerProgressService;
             _gameSound = gameSound;
             _adsService = adsService;
             _gameStateMachine = gameStateMachine;
@@ -49,7 +52,14 @@ namespace _Project.Scripts.UI.WinPictureMenu
         private void OpenChoosePictureMenu()
         {
             _gameSound.PlaySound();
-            _adsService.ShowShowFullscreen(CloseWinMenu);
+            if (_playerProgressService.Progress.DisableAdverts)
+            {
+                CloseWinMenu(true);
+            }
+            else
+            {
+                _adsService.ShowShowFullscreen(CloseWinMenu);
+            }
         }
 
         private void CloseWinMenu(bool b)
