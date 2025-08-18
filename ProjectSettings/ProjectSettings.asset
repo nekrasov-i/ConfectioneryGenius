@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: IdolGameStudio
+  companyName: ChelnokiGames
   productName: ConfectioneryGenius
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -452,9 +452,9 @@ PlayerSettings:
     PROGRESS_BAR_BACKGROUND_COLOR: 
     PROGRESS_BAR_BORDER_COLOR: 
     PROGRESS_BAR_FILL_COLOR: 
-    PROJECT_ID: 12550
+    PROJECT_ID: 23871
     SHOW_PRELOADER_AD: true
-    TOKEN: oUp0khXE5JeF6b2ynhqoL4ZU1YAMFSUS
+    TOKEN: vMswcYnZEm5vzTANmqMLPlKuITiK8dyq
   mobileMTRendering:
     Android: 1
     iPhone: 1
