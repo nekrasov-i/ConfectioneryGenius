@@ -19,14 +19,14 @@ namespace _Project.Scripts.UI.HUD
 
         private void OnEnable()
         {
-            _playerProgressService.Progress.BrushBonusOver += OnBrushBonusOver;
-            _playerProgressService.Progress.FindNumberBonusOver += OnFindNumberBonusOver;
+            // _playerProgressService.Progress.BrushBonusOver += OnBrushBonusOver;
+            // _playerProgressService.Progress.FindNumberBonusOver += OnFindNumberBonusOver;
         }
 
         private void OnDisable()
         {
-            _playerProgressService.Progress.BrushBonusOver -= OnBrushBonusOver;
-            _playerProgressService.Progress.FindNumberBonusOver -= OnFindNumberBonusOver;
+            // _playerProgressService.Progress.BrushBonusOver -= OnBrushBonusOver;
+            // _playerProgressService.Progress.FindNumberBonusOver -= OnFindNumberBonusOver;
         }
 
         private void OnFindNumberBonusOver()

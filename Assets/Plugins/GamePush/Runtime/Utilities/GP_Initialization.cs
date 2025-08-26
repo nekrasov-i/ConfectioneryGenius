@@ -1,23 +1,44 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using GamePush;
-using GP_Utilities.Console;
+using GamePush.Data;
+using GamePush.ConsoleController;
+using System.Threading.Tasks;
+using System;
+using System.Runtime.InteropServices;
+using System.Collections;
 
-namespace GP_Utilities.Initialization
+namespace GamePush.Initialization
 {
+    
     public class GP_Initialization
     {
-        static string VERSION = "v1.3.0";
+        public static string VERSION = PluginData.SDK_VERSION;
+
+#if UNITY_WEBGL
+        [DllImport("__Internal")]
+        private static extern void GP_UnityReady();
+#endif
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         private static void Execute()
         {
+
+#if !UNITY_EDITOR && UNITY_WEBGL
+             GP_UnityReady();
+#endif
             GameObject SDK = new GameObject();
-
             SDK.name = "GamePushSDK";
+            UnityEngine.Object.DontDestroyOnLoad(SDK);
 
-            Object.DontDestroyOnLoad(SDK);
-
+#if UNITY_EDITOR
             SDK.AddComponent<GP_ConsoleController>();
+#endif
+            SDK.AddComponent<GP_Logger>();
+
+            SDK.AddComponent<GP_Init>();
+            SetUpInitAwaiter();
+
             SDK.AddComponent<GP_Achievements>();
             SDK.AddComponent<GP_Ads>();
             SDK.AddComponent<GP_Analytics>();
@@ -49,8 +70,48 @@ namespace GP_Utilities.Initialization
             SDK.AddComponent<GP_Schedulers>();
             SDK.AddComponent<GP_Images>();
             SDK.AddComponent<GP_Custom>();
+            SDK.AddComponent<GP_Uniques>();
+            SDK.AddComponent<GP_Storage>();
+            SDK.AddComponent<GP_Windows>();
 
-            Debug.Log($"GamePush plugin ready ({VERSION})");
+            if (ProjectData.AUTO_PAUSE_ON_ADS)
+            {
+                SDK.AddComponent<GP_PauseLogic>();
+            }
+
+            EndInit();
         }
+
+        private static async void EndInit()
+        {
+            await EndInitTask();
+        }
+
+        private static async Task EndInitTask()
+        {
+            await GP_Init.Ready;
+
+            GP_Logger.Info($"Plugin {VERSION}", "Initialize");
+        }
+
+        private static void SetUpInitAwaiter()
+        {
+            TaskCompletionSource<bool> _tcs = new TaskCompletionSource<bool>();
+            GP_Init.Ready = _tcs.Task;
+
+            GP_Init.OnReady += () => {
+                if (!_tcs.Task.IsCompleted)
+                    _tcs.SetResult(true);
+            };
+
+            GP_Init.OnError += () => {
+                if (!_tcs.Task.IsCompleted)
+                    _tcs.SetResult(false);
+            };
+        }
+
+        
     }
+
+   
 }

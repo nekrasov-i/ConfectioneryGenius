@@ -279,7 +279,14 @@ PlayerSettings:
   AndroidMinifyDebug: 0
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: d6613695c8edf534f90cf72c8a357931, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: Android
     m_Icons:
@@ -447,13 +454,15 @@ PlayerSettings:
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
   m_TemplateCustomTags:
+    BACKGROUND_IMAGE_FILE: 
     GAMEREADY_AUTOCALL_DELAY: 
     OVERLAY_BACKGROUND_COLOR: 
+    PRODUCT_DESCRIPTION: 
     PROGRESS_BAR_BACKGROUND_COLOR: 
     PROGRESS_BAR_BORDER_COLOR: 
     PROGRESS_BAR_FILL_COLOR: 
     PROJECT_ID: 23871
-    SHOW_PRELOADER_AD: true
+    SHOW_PRELOADER_AD: True
     TOKEN: vMswcYnZEm5vzTANmqMLPlKuITiK8dyq
   mobileMTRendering:
     Android: 1

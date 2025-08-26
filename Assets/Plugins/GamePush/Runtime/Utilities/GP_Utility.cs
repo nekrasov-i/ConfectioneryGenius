@@ -3,17 +3,15 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using System;
 
-using GamePush;
-using GP_Utilities;
-
-namespace GP_Utilities
+namespace GamePush.Utilities
 {
-    public class GP_Utility
+    public class UtilityImage
     {
-        public async static Task DownloadImageAsync(string url, Image image)
+        public async static Task<bool> DownloadImageAsync(string url, Image image)
         {
-            if (url == "" || url == null) return;
+            if (url == "" || url == null) return false;
 
             var request = UnityWebRequestTexture.GetTexture(url);
             AsyncOperation operation = request.SendWebRequest();
@@ -27,20 +25,27 @@ namespace GP_Utilities
             {
                 Texture2D _texture2D = ((DownloadHandlerTexture)request.downloadHandler).texture;
 
+                if (_texture2D == null)
+                {
+                    Debug.Log("Download Image : Incorrect texture");
+                    return false;
+                }
+
                 Sprite sprite = Sprite.Create(_texture2D, new Rect(0, 0, _texture2D.width, _texture2D.height), new Vector2(0.5f, 0.5f), 20f);
 
                 image.sprite = sprite;
+                return true;
             }
             else
             {
                 Debug.Log("Download Image : Failed");
             }
+            return false;
         }
 
     }
 
-
-    public class GP_JSON
+    public class UtilityJSON
     {
         public static T[] GetArray<T>(string json)
         {
@@ -141,6 +146,22 @@ namespace GP_Utilities
         }
     }
 
+    public class UtilityType
+    {
+        public static T ConvertValue<T>(object value)
+        {
+            try
+            {
+                return (T)Convert.ChangeType(value, typeof(T));
+            }
+            catch
+            {
+                return default(T);
+            }
+        }
+    }
+    
+
     [System.Serializable]
     public class PlayersIdList
     {
@@ -151,39 +172,5 @@ namespace GP_Utilities
     public class PlayersIdArray
     {
         public int[] idsArray;
-    }
-}
-
-namespace GamePush
-{
-    public class GP_Data
-    {
-        private string _data;
-        public string Data => _data;
-
-        public GP_Data(string data) => _data = data;
-
-        public T Get<T>() => GP_JSON.Get<T>(_data);
-        public List<T> GetList<T>() => GP_JSON.GetList<T>(_data);
-        public T[] GetArray<T>() => GP_JSON.GetArray<T>(_data);
-    }
-
-    public class Console
-    {
-        public static void Log(string message)
-        {
-            if(GP_Settings.instance.viewLogs)
-            {
-                Debug.Log("<color=#04bc04> Game Push: </color> " + message);
-            }
-        }
-
-        public static void Log(string message, string colorMessage)
-        {
-            if(GP_Settings.instance.viewLogs)
-            {
-                Debug.Log("<color=#04bc04> Game Push: </color> " + message + $"<color=#04bc04> {colorMessage} </color>");
-            }
-        }
     }
 }

@@ -30,10 +30,17 @@ namespace _Project.Scripts.Services.SaveLoadService
 
         public PlayerProgress LoadProgress()
         {
-            var playerProgress = GP_Player.GetString(PlayerProgress)?.ToDeserialized<PlayerProgress>();
-            if (playerProgress != null)
-                if(playerProgress.DisableAdverts) GP_Ads.CloseSticky();
-            return playerProgress;
+            var playerProgress = GP_Player.GetString(PlayerProgress);
+            if(string.IsNullOrEmpty(playerProgress)) 
+                return null;
+
+            if (!playerProgress.Trim().StartsWith("{"))
+                return null;
+
+            var deserialized = playerProgress.ToDeserialized<PlayerProgress>();
+            if (deserialized != null)
+                if(deserialized.DisableAdverts) GP_Ads.CloseSticky();
+            return deserialized;
         }
     }
 }
