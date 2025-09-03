@@ -2,6 +2,7 @@
 using _Project.Scripts.Services.PlayerProgressService;
 using _Project.Scripts.Services.SaveLoadService;
 using _Project.Scripts.Services.ShopService;
+using GamePush;
 using Zenject;
 
 namespace _Project.Scripts.Infrastructure.FSM.State
@@ -40,6 +41,10 @@ namespace _Project.Scripts.Infrastructure.FSM.State
             _progressService.Progress = 
                 _saveLoadService.LoadProgress() 
                 ?? NewProgress();
+            
+            // Обновляем язык при каждой загрузке игры
+            _progressService.Progress.SetLanguage(GP_Language.Current());
+            
             return _progressService.Progress;
         }
 
